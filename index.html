@@ -1,103 +1,115 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>隐私政策</title>
   <style>
+    :root {
+      --primary: #e67e22;
+      --text-dark: #333;
+      --text-light: #666;
+      --bg-light: #fff9f4;
+    }
+
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+      padding: 0;
     }
-    .scroll-view {
-      flex: 1;
-      overflow-y: auto;
-      padding-bottom: env(safe-area-inset-bottom);
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      padding: 24px;
+      border-radius: 12px;
     }
-    .content {
-      padding: 32px;
-      box-sizing: border-box;
-    }
-    .title {
-      font-size: 24px;
-      font-weight: bold;
+
+    h1 {
+      font-size: 1.8em;
       text-align: center;
-      margin-bottom: 24px;
+      color: var(--primary);
+      margin-bottom: 20px;
     }
-    .subtitle {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 40px;
-      margin-bottom: 16px;
+
+    h2 {
+      font-size: 1.2em;
+      color: var(--primary);
+      margin-top: 28px;
+      margin-bottom: 10px;
+      border-left: 4px solid var(--primary);
+      padding-left: 8px;
     }
-    .section {
-      font-size: 16px;
-      line-height: 28px;
-      color: #333333;
-      margin-bottom: 16px;
-      white-space: pre-line;
+
+    p {
+      margin: 8px 0;
+      color: var(--text-dark);
     }
+
     .tip {
-      font-size: 14px;
-      color: #999999;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: var(--text-light);
       text-align: center;
-      margin-top: 48px;
-      padding-bottom: 80px;
+      padding: 12px;
+      background: #fdf3e6;
+      border-radius: 8px;
+    }
+
+    .divider {
+      height: 1px;
+      background: #eee;
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
-  <div class="scroll-view">
-    <div class="content">
-      <div class="title">隐私政策</div>
+  <div class="container">
+    <h1>隐私政策</h1>
 
-      <div class="section">
-        欢迎使用由江苏凌动智通科技有限公司开发的智能烤炉控助手（以下简称“本应用”），请务必仔细阅读本《隐私政策》，以了解我们如何收集、使用、存储和保护您的个人信息。
-      </div>
+    <p>欢迎使用由江苏凌动智通科技有限公司开发的智能烤炉控助手（以下简称“本应用”），请务必仔细阅读本《隐私政策》，以了解我们如何收集、使用、存储和保护您的个人信息。</p>
 
-      <div class="subtitle">一、我们如何收集信息</div>
-      <div class="section">设备信息：包括设备型号、操作系统版本、唯一设备标识符等。</div>
-      <div class="section">使用数据：点击、浏览、搜索、停留时间等行为数据。</div>
-      <div class="section">位置信息（可选）：用于推荐与位置相关的服务。</div>
-      <div class="section">用户提供信息：注册、反馈时提供的手机号、昵称等。</div>
+    <h2>一、我们如何收集信息</h2>
+    <p>1. 设备信息：包括设备型号、操作系统版本、唯一设备标识符等。</p>
+    <p>2. 使用数据：点击、浏览、搜索、停留时间等行为数据。</p>
+    <p>3. 位置信息（可选）：用于推荐与位置相关的服务。</p>
+    <p>4. 用户提供信息：注册、反馈时提供的手机号、昵称等。</p>
 
-      <div class="subtitle">二、我们如何使用信息</div>
-      <div class="section">用于提供核心功能、服务推荐、安全保障与客服支持。</div>
+    <h2>二、我们如何使用信息</h2>
+    <p>用于提供核心功能、服务推荐、安全保障与客服支持。</p>
 
-      <div class="subtitle">三、信息的共享、转让与披露</div>
-      <div class="section">
-        我们承诺不会将您的个人信息出售或非法共享，除非：<br />
-        获得您的明确同意；<br />
-        法律法规要求；<br />
-        为实现某些功能必须与合作伙伴共享（如地图、推送、统计SDK）；<br />
-        与关联公司在符合法律的前提下共享。
-      </div>
+    <h2>三、信息的共享、转让与披露</h2>
+    <p>我们承诺不会将您的个人信息出售或非法共享，除非：</p>
+    <p>• 获得您的明确同意；</p>
+    <p>• 法律法规要求；</p>
+    <p>• 为实现某些功能必须与合作伙伴共享（如地图、推送、统计SDK）；</p>
+    <p>• 与关联公司在符合法律的前提下共享。</p>
 
-      <div class="subtitle">四、信息的存储与安全</div>
-      <div class="section">您的信息将被存储在中国境内，并采用加密措施保护。</div>
+    <h2>四、信息的存储与安全</h2>
+    <p>您的信息将被存储在中国境内，并采用加密措施保护。</p>
 
-      <div class="subtitle">五、您的权利</div>
-      <div class="section">访问、更正、删除信息，注销账户，撤回授权。</div>
+    <h2>五、您的权利</h2>
+    <p>访问、更正、删除信息，注销账户，撤回授权。</p>
 
-      <div class="subtitle">六、关于第三方SDK</div>
-      <div class="section">为实现部分功能，我们可能接入合法第三方SDK。</div>
+    <h2>六、关于第三方SDK</h2>
+    <p>为实现部分功能，我们可能接入合法第三方SDK。</p>
 
-      <div class="subtitle">七、隐私政策的变更</div>
-      <div class="section">如有重大变更，我们将在App内通知您。</div>
+    <h2>七、隐私政策的变更</h2>
+    <p>如有重大变更，我们将在App内通知您。</p>
 
-      <div class="subtitle">八、联系我们</div>
-      <div class="section">
-        客服邮箱：22947263@qq.com <br />
-        客服电话：15821599823
-      </div>
+    <h2>八、联系我们</h2>
+    <p>客服邮箱：<a href="mailto:22947263@qq.com">22947263@qq.com</a></p>
+    <p>客服电话：15821599823</p>
 
-      <div class="tip">
-        使用本App即表示您已阅读并同意本《隐私政策》的所有条款。
-      </div>
+    <div class="divider"></div>
+
+    <div class="tip">
+      使用本App即表示您已阅读并同意本《隐私政策》的所有条款。
     </div>
   </div>
 </body>
